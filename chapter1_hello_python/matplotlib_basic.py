@@ -25,7 +25,7 @@ plt.legend() # 그래프 범례
 plt.show()
 
 # 이미지 표시하기
-img = imread('C:/Users/user/Desktop/코딩/My_coding_study/밑바닥부터 시작하는 딥러닝1/lena.png')
+img = imread('C:/Users/user/Desktop/코딩/My_coding_study/밑바닥부터 시작하는 딥러닝1/chapter1_hello_python/lena.png')
 
 plt.imshow(img)
 plt.show()
