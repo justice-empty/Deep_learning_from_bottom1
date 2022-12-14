@@ -61,5 +61,30 @@ def numerical_gradient(f, x):
     return grad
 
 print(numerical_gradient(function_2, np.array([3.0, 4.0])))
-print(numerical_gradient(function_2, np.array([3.0, 4.0])))
-print(numerical_gradient(function_2, np.array([3.0, 4.0])))
+print(numerical_gradient(function_2, np.array([0.0, 2.0])))
+print(numerical_gradient(function_2, np.array([3.0, 0.0])))
+
+# 경사법(경사하강법) 구현
+def gradient_descent(f, init_x, lr=0.01, step_num=100):
+    x = init_x
+
+    for i in range(step_num):
+        grad = numerical_gradient(f, x)
+        x -= lr * grad
+    print(x)
+    return x
+
+# 경사법 문제 예시
+init_x = np.array([-3.0, 4.0])
+gradient_descent(function_2, init_x=init_x, lr=0.1, step_num=100)
+
+# 학습률이 너무 큰 예
+init_x = np.array([-3.0, 4.0])
+gradient_descent(function_2, init_x=init_x, lr=10.0, step_num=100)
+# 너무 큰 값으로 발산함
+
+# 학습률이 너무 작은 예
+init_x = np.array([-3.0, 4.0])
+gradient_descent(function_2, init_x=init_x, lr=1e-10, step_num=100)
+# 학습이 채 되지 않은채로 끝남
+
