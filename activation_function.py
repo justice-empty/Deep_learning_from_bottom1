@@ -25,6 +25,9 @@ def sigmoid(x):
 x = np.array([-1.0, 1.0, 2.0])
 print(sigmoid(x))
 
+def sigmoid_grad(x):
+    return (1.0 - sigmoid(x)) * sigmoid(x)
+
 """
 # 시그모이드 함수 그래프
 x = np.arange(-5.0, 5.0, 0.1)
