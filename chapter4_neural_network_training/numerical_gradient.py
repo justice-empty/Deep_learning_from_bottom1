@@ -88,3 +88,4 @@ init_x = np.array([-3.0, 4.0])
 gradient_descent(function_2, init_x=init_x, lr=1e-10, step_num=100)
 # 학습이 채 되지 않은채로 끝남
 
+print(__name__)
