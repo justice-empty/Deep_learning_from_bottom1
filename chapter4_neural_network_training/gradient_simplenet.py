@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append('C:/Users/user/Desktop/코딩/My_coding_study/밑바닥부터 시작하는 딥러닝1')
+sys.path.append('My_coding_study\Deep_learning_from_bottom1')
 import numpy as np
 from activation_function import softmax
 from loss_function import cross_entropy_error
