@@ -2,7 +2,7 @@ import sys, os
 sys.path.append('My_coding_study\Deep_learning_from_bottom1')  # 부모 디렉터리의 파일을 가져올 수 있도록 설정
 import numpy as np
 import matplotlib.pyplot as plt
-from mnist import load_mnist
+from chapter3_neural_network.mnist import load_mnist
 from two_layer_class import TwoLayerNet
 
 # 데이터 읽기

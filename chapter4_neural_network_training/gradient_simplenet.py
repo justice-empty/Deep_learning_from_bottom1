@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append('My_coding_study\Deep_learning_from_bottom1')
 import numpy as np
-from activation_function import softmax
+from chapter3_neural_network.activation_function import softmax
 from loss_function import cross_entropy_error
 from numerical_gradient import numerical_gradient
 
