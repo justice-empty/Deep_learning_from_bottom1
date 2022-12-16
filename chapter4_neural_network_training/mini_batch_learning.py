@@ -1,8 +1,8 @@
 import sys, os
-sys.path.append('C:\\Users\\user\\Desktop\\코딩\\My_coding_study\\밑바닥부터 시작하는 딥러닝1') 
+sys.path.append(r'C:\Users\user\Desktop\coding\My_coding_study\Deep_learning_from_bottom1') 
 import numpy as np
-from mnist import load_mnist
-
+from chapter3_neural_network.mnist import load_mnist
+ 
 (x_train, t_train), (x_test, y_test) = load_mnist(normalize=True, one_hot_label=True)
 
 # 훈련 데이터에서 무작위로 10장 빼내기
