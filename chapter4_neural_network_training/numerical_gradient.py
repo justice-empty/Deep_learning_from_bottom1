@@ -10,9 +10,6 @@ def numerical_diff(f, x): # 수치 미분
 def function_1(x):
     return 0.01*x**2 + 0.1*x
 
-print(numerical_diff(function_1, 5)) 
-print(numerical_diff(function_1, 10)) # 해석적 미분과 같은 값이라고 할 수 있을만큼 작은 오차의 값
-
 """
 x = np.arange(0.0, 20.0, 0.1)
 y = function_1(x)
@@ -31,15 +28,12 @@ def function_2(x):
 def function_tmp1(x0):
     return x0*x0 + 4.0**2.0
 
-print(numerical_diff(function_tmp1, 3.0))
-
 # x0=3, x1=4일 때, x1에 대한 편미분
 def function_tmp2(x1):
     return 3.0**2.0 + x1*x1
 
-print(numerical_diff(function_tmp2, 4.0))
-
 # 기울기 구현
+
 def numerical_gradient(f, x):
     h = 1e-4
     grad = np.zeros_like(x) # x와 같은 형상의 0으로된 배열 생성
@@ -59,10 +53,6 @@ def numerical_gradient(f, x):
         x[idx] = tmp_val # 값 복원
 
     return grad
-
-print(numerical_gradient(function_2, np.array([3.0, 4.0])))
-print(numerical_gradient(function_2, np.array([0.0, 2.0])))
-print(numerical_gradient(function_2, np.array([3.0, 0.0])))
 
 # 경사법(경사하강법) 구현
 def gradient_descent(f, init_x, lr=0.01, step_num=100):
@@ -88,4 +78,12 @@ init_x = np.array([-3.0, 4.0])
 gradient_descent(function_2, init_x=init_x, lr=1e-10, step_num=100)
 # 학습이 채 되지 않은채로 끝남
 
-print(__name__)
+if __name__ == __main__:
+    print(numerical_diff(function_1, 5)) 
+    print(numerical_diff(function_1, 10)) # 해석적 미분과 같은 값이라고 할 수 있을만큼 작은 오차의 값
+    print(numerical_diff(function_tmp1, 3.0))
+    print(numerical_diff(function_tmp2, 4.0))
+    print(numerical_gradient(function_2, np.array([3.0, 4.0])))
+    print(numerical_gradient(function_2, np.array([0.0, 2.0])))
+    print(numerical_gradient(function_2, np.array([3.0, 0.0])))
+    print(__name__)
