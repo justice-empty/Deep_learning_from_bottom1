@@ -66,17 +66,12 @@ def gradient_descent(f, init_x, lr=0.01, step_num=100):
 
 # 경사법 문제 예시
 init_x = np.array([-3.0, 4.0])
-gradient_descent(function_2, init_x=init_x, lr=0.1, step_num=100)
 
 # 학습률이 너무 큰 예
 init_x = np.array([-3.0, 4.0])
-gradient_descent(function_2, init_x=init_x, lr=10.0, step_num=100)
-# 너무 큰 값으로 발산함
 
 # 학습률이 너무 작은 예
 init_x = np.array([-3.0, 4.0])
-gradient_descent(function_2, init_x=init_x, lr=1e-10, step_num=100)
-# 학습이 채 되지 않은채로 끝남
 
 if __name__ == '__main__':
     print(numerical_diff(function_1, 5)) 
@@ -85,5 +80,8 @@ if __name__ == '__main__':
     print(numerical_diff(function_tmp2, 4.0))    
     print(numerical_gradient(function_2, np.array([3.0, 4.0])))
     print(numerical_gradient(function_2, np.array([0.0, 2.0])))
-    print(numerical_gradient(function_2, np.array([3.0, 0.0])))
+    print(numerical_gradient(function_2, np.array([3.0, 0.0])))  
+    gradient_descent(function_2, init_x=init_x, lr=0.1, step_num=100) # 적정값
+    gradient_descent(function_2, init_x=init_x, lr=10.0, step_num=100) # 너무 큰 값으로 발산함
+    gradient_descent(function_2, init_x=init_x, lr=1e-10, step_num=100) # 학습이 채 되지 않은채로 끝남
     print('numerical_gradient 끝')
