@@ -22,9 +22,6 @@ plt.show()
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
-x = np.array([-1.0, 1.0, 2.0])
-print(sigmoid(x))
-
 def sigmoid_grad(x):
     return (1.0 - sigmoid(x)) * sigmoid(x)
 
@@ -69,3 +66,7 @@ def softmax(a):
     sum_exp_a = np.sum(exp_a)
     y = exp_a / sum_exp_a
     return y
+
+if __name__ == '__main__':
+    x = np.array([-1.0, 1.0, 2.0])
+    print(sigmoid(x))

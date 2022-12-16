@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append('My_coding_study\Deep_learning_from_bottom1')
+sys.path.append(r'C:\Users\신해솔\Documents\Coding\PythonWorld\Deep_learning_from_bottom1')
 import numpy as np
 from activation_function import *
 from loss_function import cross_entropy_error
