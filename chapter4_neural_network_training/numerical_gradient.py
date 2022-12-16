@@ -78,12 +78,12 @@ init_x = np.array([-3.0, 4.0])
 gradient_descent(function_2, init_x=init_x, lr=1e-10, step_num=100)
 # 학습이 채 되지 않은채로 끝남
 
-if __name__ == __main__:
+if __name__ == '__main__':
     print(numerical_diff(function_1, 5)) 
     print(numerical_diff(function_1, 10)) # 해석적 미분과 같은 값이라고 할 수 있을만큼 작은 오차의 값
     print(numerical_diff(function_tmp1, 3.0))
-    print(numerical_diff(function_tmp2, 4.0))
+    print(numerical_diff(function_tmp2, 4.0))    
     print(numerical_gradient(function_2, np.array([3.0, 4.0])))
     print(numerical_gradient(function_2, np.array([0.0, 2.0])))
     print(numerical_gradient(function_2, np.array([3.0, 0.0])))
-    print(__name__)
+    print('numerical_gradient 끝')
