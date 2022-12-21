@@ -15,3 +15,18 @@ class MulLayer: # 곱셈 계층
         dy = dout * self.x
 
         return dx, dy
+
+class AddLayer: # 덧셈 계층
+    def __init__(self):
+        pass
+    
+    def forward(self, x, y):
+        out = x + y
+
+        return out
+    
+    def backward(self, dout):
+        dx = dout * 1
+        dy = dout * 1
+
+        return dx, dy
