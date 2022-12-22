@@ -1,3 +1,5 @@
+import sys, os
+sys.path.append('C:\\Users\\user\\Desktop\\coding\\My_coding_study\\Deep_learning_from_bottom1')
 import numpy as np
 from chapter3_neural_network.activation_function import softmax
 from chapter4_neural_network_training.loss_function import cross_entropy_error
