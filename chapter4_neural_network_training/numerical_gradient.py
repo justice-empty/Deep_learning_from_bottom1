@@ -55,16 +55,25 @@ def _numerical_gradient_no_batch(f, x):
     return grad
 
 
-def numerical_gradient(f, X):
-    if X.ndim == 1:
-        return _numerical_gradient_no_batch(f, X)
-    else:
-        grad = np.zeros_like(X)
+def numerical_gradient(f, x):
+    h = 1e-4 # 0.0001
+    grad = np.zeros_like(x)
+    
+    it = np.nditer(x, flags=['multi_index'], op_flags=['readwrite'])
+    while not it.finished:
+        idx = it.multi_index
+        tmp_val = x[idx]
+        x[idx] = float(tmp_val) + h
+        fxh1 = f(x) # f(x+h)
         
-        for idx, x in enumerate(X):
-            grad[idx] = _numerical_gradient_no_batch(f, x)
+        x[idx] = tmp_val - h 
+        fxh2 = f(x) # f(x-h)
+        grad[idx] = (fxh1 - fxh2) / (2*h)
         
-        return grad
+        x[idx] = tmp_val # 값 복원
+        it.iternext()   
+        
+    return grad
 
 # 경사법(경사하강법) 구현
 def gradient_descent(f, init_x, lr=0.01, step_num=100):

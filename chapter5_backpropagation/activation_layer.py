@@ -26,7 +26,7 @@ class Sigmoid:
         self.out = None
     
     def forward(self, x):
-        out = 1/(1 + np.exp(-x))
+        out = 1 / (1 + np.exp(-x))
         self.out = out
 
         return out
@@ -46,13 +46,13 @@ class Affine:
     
     def forward(self, x):
         self.x = x
-        out = np.dot(x, self.W) + self.b
+        out = np.dot(self.x, self.W) + self.b
 
         return out
 
     def backward(self, dout):
         dx = np.dot(dout, self.W.T)
-        self.dw = np.dot(self.x.T, dout)
+        self.dW = np.dot(self.x.T, dout)
         self.db = np.sum(dout, axis=0)
 
         return dx
