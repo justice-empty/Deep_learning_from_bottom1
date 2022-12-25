@@ -64,3 +64,8 @@ matplotlib 라이브러리 기초 내용 학습
 
 **22-12-23**  
 책 181p - 183p 학습  
+
+**22-12-25**  
+two_layer_net, gradient_check 파일 작동 원리 복습  
+
+책 184p - 187p 학습  
