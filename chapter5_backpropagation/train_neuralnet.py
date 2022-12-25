@@ -9,19 +9,20 @@ from two_layer_net import TwoLayerNet
 
 network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
 
-iters_num = 10000
-train_size = x_train.shape[0]
-batch_size = 100
-learning_rate = 0.1
+# 변수 설정
+iters_num = 10000 # 반복 횟수
+train_size = x_train.shape[0] # (60000, 784) 이므로 train_size는 60000
+batch_size = 100 # 배치 사이즈
+learning_rate = 0.1 # 학습률 0.1 (기울기를 갱신할 때, 학습률의 크기만큼 갱신함)
 
-train_loss_list = []
+train_loss_list = [] 
 train_acc_list = []
 test_acc_list = []
 
-iter_per_epoch = max(train_size / batch_size, 1)
+iter_per_epoch = max(train_size / batch_size, 1) # 60000/100
 
 for i in range(iters_num):
-    batch_mask = np.random.choice(train_size, batch_size)
+    batch_mask = np.random.choice(train_size, batch_size) # 0부터 59999까지의 숫자를(train_size만큼) 100개(batch_size만큼) 뽑음
     x_batch = x_train[batch_mask]
     t_batch = t_train[batch_mask]
 
