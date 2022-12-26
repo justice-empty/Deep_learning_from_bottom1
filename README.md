@@ -69,3 +69,9 @@ matplotlib 라이브러리 기초 내용 학습
 two_layer_net, gradient_check 파일 작동 원리 복습  
 
 책 184p - 187p 학습  
+
+**22-12-26**  
+
+부스트코스 PY4E - 챕터1 수강  
+
+책 189p - 202p 학습  
