@@ -93,3 +93,29 @@ two_layer_net, gradient_check 파일 작동 원리 복습
 **22-01-11**  
 
 부스트코스 PY4E - 챕터5, 6, 7수강  
+
+**22-01-12**  
+
+부스트코스 인공지능 기초 다지기 코칭스터디 9기 시작  
+
+**22-01-13**  
+
+부스트코스 PY4E - 챕터8 수강  
+
+**22-01-14**  
+
+부스트코스 PY4E - 챕터9, 10수강  
+
+**22-01-15**  
+
+부스트코스 인공지능 기초 다지기 - 챕터1 - Variables 수강  
+
+**22-01-16**  
+
+부스트코스 인공지능 기초 다지기 - 챕터1 - Function and Console I/O, Conditionals and Loops, String and advanced function concept 수강  
+
+**22-01-17**  
+
+책 221p - 226p 학습  
+
+부스트코스 인공지능 기초 다지기 - 챕터1 - Python Data Structure, Pythonic code 수강  
