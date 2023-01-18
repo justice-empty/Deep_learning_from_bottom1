@@ -119,3 +119,9 @@ two_layer_net, gradient_check 파일 작동 원리 복습
 책 221p - 226p 학습  
 
 부스트코스 인공지능 기초 다지기 - 챕터1 - Python Data Structure, Pythonic code 수강  
+
+**22-01-18**  
+
+책 227p - 234p 학습  
+
+부스트코스 인공지능 기초 다지기 - 챕터2 - Python Object Oriented Programming 수강
