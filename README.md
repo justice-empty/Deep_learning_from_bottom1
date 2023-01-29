@@ -125,3 +125,25 @@ two_layer_net, gradient_check 파일 작동 원리 복습
 책 227p - 234p 학습  
 
 부스트코스 인공지능 기초 다지기 - 챕터2 - Python Object Oriented Programming 수강
+
+**22-01-19**  
+
+부스트코스 인공지능 기초 다지기 - 챕터2 - Module and Project 수강
+
+부스트코스 라이브 강의  
+
+**22-01-20**  
+
+부스트코스 인공지능 기초 다지기 - 챕터2 - File / Exception / Log Handling 수강
+
+**22-01-25**  
+
+부스트코스 인공지능 기초 다지기 - 챕터2 - Python data handling 수강
+
+**22-01-25**  
+
+부스트코스 커리어 세미나  
+
+**22-01-29**  
+
+책 235p - 241p 학습  
